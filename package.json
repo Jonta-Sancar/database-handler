@@ -3,7 +3,15 @@
   "author": "Jonthas Carneiro",
   "version": "1.0.0",
   "description": "A package to handler the MySQL database.",
-  "keywords": ["database", "SQL", "MySQL", "database handler", "mysql2", "node", "node.js"],
+  "keywords": [
+    "database",
+    "SQL",
+    "MySQL",
+    "database handler",
+    "mysql2",
+    "node",
+    "node.js"
+  ],
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,6 +19,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "mysql2": "^3.6.2"
   }
 }

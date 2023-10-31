@@ -1,8 +1,8 @@
 const functions = {
   /**
    * 
-   * @param {(String|Array)} condition this parameter can be a String or an Array. If it is a String, nothing changes, but if it is an array, backticks are applied and the format Array[0] = Array[1].
-   * @returns the condition in SQL format
+   * @param {(String|String[])} condition this parameter can be a String or an Array. If it is a String, nothing changes, but if it is an array, backticks are applied and the format Array[0] = Array[1].
+   * @returns {String} the condition in SQL format
    */
   returnOnCondition(condition){
     let condition_txt = '';
@@ -18,8 +18,8 @@ const functions = {
   
   /**
    * 
-   * @param {Array} conditions the array of conditions to apply in your SQL.
-   * @returns an object with the 'WHERE' conditions in SQL format and an array with the values to be applied in SQL 
+   * @param {String[]} conditions the array of conditions to apply in your SQL.
+   * @returns {String} an object with the 'WHERE' conditions in SQL format and an array with the values to be applied in SQL 
    */
   returnWhere(conditions){
     let where_arr    = [];
@@ -46,7 +46,7 @@ const functions = {
   /**
    * 
    * @param {String} structure_name the name of your database structures, such as table names and column names, but when these names have the SQL AS command
-   * @returns the names of structures in SQL format
+   * @returns {String} the names of structures in SQL format
    */
   adjustAs(structure_name){
     if(structure_name.indexOf(' ') >= 0 && structure_name.indexOf(' AS ') < 0 && structure_name.indexOf(' as ') < 0){
@@ -81,7 +81,7 @@ const functions = {
   /**
    * 
    * @param {String} structure_name the name of your database structures, such as table names and column names, but when these names have the dot, such as: `table`.`column`  
-   * @returns the names of structures in SQL format
+   * @returns {String} the names of structures in SQL format
    */
   adjustDot(structure_name){
     if(structure_name.indexOf('.') >= 0 && structure_name.indexOf('`') < 0){
@@ -104,7 +104,7 @@ const functions = {
   /**
    * 
    * @param {String} structure_name the name of your database structures, such as table names and column names. 
-   * @returns the names of structures in SQL format
+   * @returns {String} the names of structures in SQL format
    */
   makeStructureName(structure_name){
     let next = true;

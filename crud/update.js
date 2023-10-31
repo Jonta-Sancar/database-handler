@@ -2,8 +2,11 @@ const UPDATE = {
   /**
    * 
    * @param {String} table The name of the table in which the records will be edited
-   * @param {Object} data The object where the table columns are the properties and the data to be defined are the values of this properties
-   * @param {Array} conditions The parameters to filter the record to be edited
+   * @param data The object where the table columns are the properties and the data to be defined are the values of this properties
+   * @param {String} data.table_column_1 Data object properties are named according to the names of the columns in your database table and contain the value to be added to the respective column
+   * @param {String} data.table_column_2 Data object properties are named according to the names of the columns in your database table and contain the value to be added to the respective column
+   * @param {String} data.table_column_... Data object properties are named according to the names of the columns in your database table and contain the value to be added to the respective column
+   * @param {string[]} conditions The parameters to filter the record to be edited
    * @returns the result of the SQLExec function.
    */
   async UPDATE(table, data, conditions) {

@@ -1,10 +1,10 @@
 const SELECT = {
   /**
    * 
-   * @param {(String | Array)} table The name of the table where you want to select records. If you want to select more than one table, this parameter can be an array and you can add the table names as values in this array
-   * @param {(String | Array)} columns you can enter a string, or you can enter an array, where the values are the column names. If you are using more than one table, remember to enter the columns along with the name of the table to which they belong, such as: table.column
-   * @param {Array} on The ON condition is used when you select more than one table and its value is an array, where the values can be an array or a string. If the value is a string, nothing is changed, but if it is an array, the format applied is Array[0] = Array[1]. If you select only one table, this parameter is understood as the conditions parameter and is applied in the WHERE clause
-   * @param {(Array | String)} conditions its value is an array, where the values can be an array or a string. If the value is a string, nothing is changed, but if it is an array, the format applied is Array[0] = Array[1]. If you select only one table, this parameter must be a String and is understood as a complement parameter being applied after the WHERE clause
+   * @param {(String | String[])} table The name of the table where you want to select records. If you want to select more than one table, this parameter can be an array and you can add the table names as values in this array
+   * @param {(String | String[])} columns you can enter a string, or you can enter an array, where the values are the column names. If you are using more than one table, remember to enter the columns along with the name of the table to which they belong, such as: table.column
+   * @param {String[] | String[][]} on The ON condition is used when you select more than one table and its value is an array, where the values can be an array or a string. If the value is a string, nothing is changed, but if it is an array, the format applied is Array[0] = Array[1]. If you select only one table, this parameter is understood as the conditions parameter and is applied in the WHERE clause
+   * @param {String[] | String[][] | String} conditions its value is an array, where the values can be an array or a string. If the value is a string, nothing is changed, but if it is an array, the format applied is Array[0] = Array[1]. If you select only one table, this parameter must be a String and is understood as a complement parameter being applied after the WHERE clause
    * @param {String} complement  this parameter is applied after the WHERE clause. If you select only one table, this parameter will be disregarded
    * @returns the result of the SQLExec function.
    */

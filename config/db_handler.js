@@ -51,7 +51,7 @@ const DB_handler = {
 
   /**
    * 
-   * @param {(String | Array)} SQL This parameter can be a String, only with SQL, or an Array, where Array[0] is the SQL and Array[1] is the array of values to be applied in the SQL
+   * @param {(String | String[])} SQL This parameter can be a String, only with SQL, or an Array, where Array[0] is the SQL and Array[1] is the array of values to be applied in the SQL
    * @returns This function returns the result of the executed SQL if successful. If the SQL fails, the function returns the error. The function always returns the executed SQL
    */
   async SQLExec(SQL){

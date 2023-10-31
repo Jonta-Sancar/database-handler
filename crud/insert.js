@@ -2,7 +2,10 @@ const INSERT = {
   /**
    * 
    * @param {String} table The name of the table to which a record will be added
-   * @param {Object} data The object where the table columns are the properties and the data to be defined are the values of this properties
+   * @param data The object where the table columns are the properties and the data to be defined are the values of this properties
+   * @param {String} data.table_column_1 Data object properties are named according to the names of the columns in your database table and contain the value to be added to the respective column
+   * @param {String} data.table_column_2 Data object properties are named according to the names of the columns in your database table and contain the value to be added to the respective column
+   * @param {String} data.table_column_... Data object properties are named according to the names of the columns in your database table and contain the value to be added to the respective column
    * @returns the result of the SQLExec function.
    */
   async INSERT(table, data) {

@@ -18,4 +18,4 @@ const DELETE = {
   }
 };
 
-module.exports = DELETE;
+export default DELETE;

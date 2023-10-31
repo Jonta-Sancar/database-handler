@@ -31,4 +31,4 @@ const UPDATE = {
   }
 };
 
-module.exports = UPDATE;
+export default UPDATE;

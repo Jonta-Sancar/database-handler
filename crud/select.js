@@ -81,11 +81,8 @@ const SELECT = {
 
     SQL + complement_txt;
 
-    console.log(SQL);
-
-
     return await this.SQLExec([SQL, values_arr]);
   }
 };
 
-module.exports = SELECT;
+export default SELECT;

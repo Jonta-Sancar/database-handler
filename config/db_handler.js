@@ -1,3 +1,5 @@
+import mysql from 'mysql2/promise';
+
 const DB_handler = {
   connection_info:{
     host: "",
@@ -29,7 +31,6 @@ const DB_handler = {
       return global.connection;
   
     try {
-      const mysql = require('mysql2/promise');
       const connection = await mysql.createConnection({
         host: this.connection_info.host,
         user: this.connection_info.user,
@@ -73,4 +74,4 @@ const DB_handler = {
   }
 };
 
-module.exports = DB_handler;
+export default DB_handler;

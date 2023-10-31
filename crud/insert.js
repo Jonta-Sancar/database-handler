@@ -19,7 +19,7 @@ const INSERT = {
       values_place.push('?');
     }
 
-    columns_arr = columns_arr.map(column_name => { return this.makeStructureName(column_name) })
+    columns_arr = columns_arr.map(column_name => { return this.makeStructureName(column_name) });
 
     const columns_txt = columns_arr.join(', ');
     const values_txt = values_place.join(", ");
@@ -30,4 +30,4 @@ const INSERT = {
   }
 };
 
-module.exports = INSERT;
+export default INSERT;

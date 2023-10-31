@@ -1,6 +1,6 @@
-const db_handler = require('./config/db_handler');
-const FUNTIONS = require('./config/functions');
-const CRUD = require('./crud/crud');
+import db_handler from './config/db_handler.js';
+import FUNTIONS   from './config/functions.js';
+import CRUD       from './crud/crud.js';
 
 const DBH = {
   ...db_handler,
@@ -8,4 +8,4 @@ const DBH = {
   ...CRUD
 };
 
-module.exports = DBH;
+export default DBH;

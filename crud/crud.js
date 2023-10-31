@@ -1,8 +1,8 @@
-const INSERT = require('./insert');
-const UPDATE = require('./update');
-const DELETE = require('./delete');
-const SELECT = require('./select');
+import INSERT from './insert.js';
+import UPDATE from './update.js';
+import DELETE from './delete.js';
+import SELECT from './select.js';
 
-const CRUD = {...INSERT,...DELETE,...SELECT,...UPDATE};
+const CRUD = {...INSERT, ...DELETE, ...SELECT, ...UPDATE};
 
-module.exports = CRUD;
+export default CRUD;

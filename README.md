@@ -1,2 +1,2 @@
 # database-handler
-Um pacote para simplificação do uso do MySQL através do NODE.js
+A package to simplify the use of MySQL by NODE.js
